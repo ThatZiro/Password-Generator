@@ -1,10 +1,8 @@
 //====================================================================================================//
 //========================================[ Global Elements ]=========================================//
 //====================================================================================================//
-
 // Add event listener to generate button
 var generateBtn = document.querySelector("#generate");
-generateBtn.addEventListener("click", writePassword);
 
 //Input Number
 let passwordLength;
@@ -33,56 +31,64 @@ function writePassword() {
   passwordText.value = password;
 }
 
-//===== Generate Password =====//
+//============== Generate Password ==============//
 // returns a string with a generated password
-//============================//
+//===============================================//
 function generatePassword() {
+  // // TODO: Handle User Inputs
   //Function User Inputs => True = Continue, False = Breakout
-  //Function Build Array of Avalible Options
+  passwordLength = prompt(
+    `How many characters would you like the password to be?
+    between (8-128)`
+  );
+  // // TODO: Check if this is a Valid Input
+  if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
+    alert("You must select a number between 8 and 128");
+    return "";
+  }
 
-  //Check if finalArray !Empty True = Continue, False = Breakout
+  // // TODO: Handle Building the Array of possible options
+  var possibleOptions = BuildArrayOfOptions();
+  if (possibleOptions == 0) {
+    alert("You must select a set of characters to continue");
+    return "";
+  }
 
-  var password;
-  //For Loops based on Length
+  var password = "";
+  // // TODO: Loop through the Length and push items to Array
   //Each Loop Get Random String from Abalible Options
-  //Amend to password
+  for (let i = 0; i < passwordLength; i++) {
+    let randomint = Math.floor(Math.random() * possibleOptions.length);
+    password += possibleOptions[randomint];
+  }
 
-  //Evaluate Password for at least one of each input
-  return password;
+  return password; //Return a string for password
 }
 
-//===== Get User Inputs =====//
-// Sends Prompts to the User requiring verification
-//============================//
-function getUserInputs() {
-  //Send for passwordlength
-  //Evaluate Length => Return false
-
-  //Send for allowSpecials
-  //Send for allowNumeric
-  //Send for allowLower
-  //Send for allowUpper
-  //Evaluate allowBools => Return false
-
-  return true;
-}
-
-//===== Build Arrays =====//
+//=========== Build Arrays ===========//
 // returns all arrays based on Inputs
-//============================//
-function buildArrayOfOptions() {
-  var finalArray;
-  //If allowSymbles
-  //Amend symbleSet > finalArray
-
-  //If allowNumbers
-  //Amend numberSet > finalArray
-
-  //If allowLowercase
-  //Amend '' > finalArray
-
-  //If allowUppercase
-  //Amend '' > finalArray
-
+//====================================//
+function BuildArrayOfOptions() {
+  var finalArray = [];
+  // // TODO check all Bools and build the array based on what bools are selected
+  if (confirm("Would you like lower case letters?")) {
+    finalArray = finalArray.concat(alphabetSetLower);
+  }
+  if (confirm("Would you like upper case letters?")) {
+    finalArray = finalArray.concat(alphabetSetUpper);
+  }
+  if (confirm("Would you like to use numbers?")) {
+    finalArray = finalArray.concat(numberSet);
+  }
+  if (confirm("Would you like special characters?")) {
+    finalArray = finalArray.concat(symbolSet);
+  }
   return finalArray;
 }
+
+//====================================================================================================//
+//===========================================[ Events ]===============================================//
+//====================================================================================================//
+
+//How we start logic from this script
+generateBtn.addEventListener("click", writePassword);
