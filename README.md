@@ -16,7 +16,7 @@
 
 <h3 align="center">Brandon Barnes</h3>
 
-  <p align="center">This website is my personal portfolio project, a platform to showcase my skills and work to potential employers, emphasizing the importance of live web applications in my career search. I've applies core skills such as flexbox, media queries, and CSS variables to create a dynamic portfolio that reflects my abilities and thought processes, ultimately enhancing my job prospects.
+  <p align="center">Welcome to our cutting-edge Password Generator – the ultimate tool to fortify your online security effortlessly. Created as part of a UCF Class project, our platform empowers you to craft rock-solid passwords tailored to your exact specifications. Our intuitive prompts make the process a breeze, and within seconds, you'll have a password that's perfectly suited to meet your security needs. Safeguard your digital world with ease – try our Password Generator today!
   </p>
 </div>
 </br>
