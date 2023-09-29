@@ -32,12 +32,13 @@
   <ol>
     <li><a href="#tech-stack">Tech Stack</a></li>
     <li><a href="#sneak-peek">Sneak Peek</a></li>
+    <li><a href="#development">Development</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
 ## Tech Stack
-
+<a name="tech-stack"></a>
 ![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -46,7 +47,7 @@
 <!-- GETTING STARTED -->
 
 ## Sneak Peek
-
+<a name="sneak-peek"></a>
 ![mockup720](./README_Assets/README-Screenshot.png)
 
 ### <a href="https://thatziro.github.io/Password-Generator/" target="_blank">Visit Site</a> 🚀
@@ -54,7 +55,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Development
-
+<a name="development"></a>
 <details>
   <summary  style="font-size:18px">Flow Chart</summary>
   <img src="./README_Assets/README-Chart_1.png" alt="Logo" width="1000">
@@ -67,7 +68,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
-
+<a name="contact"></a>
 <h4>Twitter - <a href="https://twitter.com/ThatZiro">@ThatZiro</a></h4>
 <h4>Email - <a href="mailto:ImBrandonBarnes@gmail.com">ImBrandonBarnes@gmail.com</a></h4>
 <h4>Github - <a href="https://github.com/ThatZiro">ThatZiro</a></h4>
